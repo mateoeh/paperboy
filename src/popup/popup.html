@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <div id="header">
+            <form>
+                <input
+                    id="username-input"
+                    type="text"
+                    required
+                    pattern="[A-Za-z0-9_-]{2,15}"
+                    placeholder="HN username"
+                />
+                <input id="refresh" type="submit" value="Refresh" />
+            </form>
+            <span id="last-refresh" class="secondary">Never refreshed</span>
+            <a href=# id="clear-all" class="secondary">Clear all</a>
+        </div>
+
+        <span id="no-notifications">No new notifications!</span>
+
+        <template>
+            <div class="reply-container">
+                <a class="item-link"></a>
+                <p class="content"></p>
+                <span class="time-label secondary"></span>
+                <a href=# class="clear secondary">&middot; Dismiss</a>
+            </div>
+        </template>
+
+        <script src="/js/common.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>

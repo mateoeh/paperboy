@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Paperboy for HN",
+    "version": "1.0",
+    "description": "Shows replies to your HN posts and comments",
+    "background": {
+        "scripts": [
+            "/js/common.js", 
+            "/js/background.js"
+        ]
+    },
+    "icons": {
+        "96": "/assets/icon.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "96": "/assets/icon-action.png"
+        },
+        "default_title": "Paperboy",
+        "default_popup": "/popup/popup.html"
+    },
+    "permissions": ["storage"],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "paperboy@mateoeh.com"
+        }
+    }
+}
