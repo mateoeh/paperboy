@@ -27,8 +27,7 @@ let decodingTextArea = null;
 // Make HTML suitable for .textContent
 const toPlaintext = function toPlaintext(html) {
     // Strip HTML tags
-    let sanitized = html.replace("<p>", "\n");
-    sanitized = html.replace(/<[^>]*>/g, "");
+    const sanitized = html.replace(/<p>/g, " ").replace(/<[^>]*>/g, "");
 
     // Decode HTML entities. <textarea> will preserve tags (to avoid XSS)
     // https://stackoverflow.com/a/7394787
