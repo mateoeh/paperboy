@@ -56,6 +56,7 @@ const bindReplyToContainer = function bindReplyToContainer(reply, container) {
 
     const time = container.querySelector(".time-label");
     time.textContent = paperboy.timeAgoString(reply.timestamp);
+    time.title = new Date(reply.timestamp * 1000).toString();
 
     const content = container.querySelector(".content");
     content.textContent = reply.content;
