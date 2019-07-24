@@ -62,7 +62,10 @@ const bindReplyToContainer = function bindReplyToContainer(reply, container) {
 
     const clear = container.querySelector(".clear");
     clear.postId = reply.postId;
-    clear.addEventListener("click", clearReply);
+    clear.addEventListener("click", clickEvent => {
+        clickEvent.preventDefault();
+        clearReply(clickEvent);
+    });
 };
 
 const showRepliesForUser = function showRepliesForUser(replies, username) {
