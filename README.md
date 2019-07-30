@@ -3,8 +3,3 @@ A Firefox extension that shows you replies to all of your
 week. Refreshes every 10 minutes.
 
 ![Extension screenshot](https://imgur.com/3UwZYEJ.png)
-
-Written in vanilla JS with no dependencies. Licensed under GNU GPLv3. See 
-[`LICENSE`][gpl] for details.
-
-[gpl]: /LICENSE
