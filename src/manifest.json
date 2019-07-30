@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Paperboy for HN",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Shows replies to your HN posts and comments",
     "background": {
         "scripts": [
